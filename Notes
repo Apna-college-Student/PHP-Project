@@ -1,0 +1,33 @@
+Install Apache Web Server :-
+                sudo apt update
+                sudo apt install apache2
+                
+Start and Enable Apache Web Server : Once installed, you need to start the Apache service and enable it to start on boot.
+Command : sudo systemctl start apache2
+To enable Apache to start automatically on boot:
+Command : sudo systemctl enable apache2
+
+Check Apache Status
+Command : sudo systemctl status apache2
+Configuring Apache :Main Configuration File
+Command : sudo nano /etc/apache2/apache2.conf
+
+Virtual Host  : To configure a virtual host 
+Command       : sudo nano /etc/apache2/sites-available/mywebsite.conf
+
+Manage Apache- Start Apache : sudo systemctl start apache2
+Stop Apache     : sudo systemctl stop apache2 
+Restart Apache  : sudo systemctl restart apache2
+Reload Apache (to apply configuration changes without fully restarting)  : sudo systemctl reload apache2
+Check Apache Status   : sudo systemctl status apache2
+
+Logs and Troubleshooting : The key logs to check are:
+                            access.log: Logs all requests to the server.
+                            error.log: Logs any errors that Apache encounters.
+To view logs   : sudo tail -f /var/log/apache2/error.log
+
+Enable/Disable Modules :- Apache uses modules to extend its functionality. You can enable or disable modules as needed.
+Enable a Module  :   sudo a2enmod rewrite
+                 :   sudo systemctl restart apache2
+Disable a module :   sudo a2dismod rewrite
+                     sudo systemctl restart apache2
