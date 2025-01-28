@@ -1,0 +1,9 @@
+GITHUB Commands : git command used in visual stedio in Terminal used command save to GITHUB IN FILE /
+git --version
+git status
+git add .
+git commit -m "add initial files"
+git push -u origin main
+
+GITHUB in used command and GUI : 
+profile - your repositories  - New -Repository Name [Create Repository]
