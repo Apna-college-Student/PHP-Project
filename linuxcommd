@@ -1,12 +1,12 @@
 Deepka Sir task
 Linux short used file
-Softlink / Hardlink :-
+{ Softlink / Hardlink :-
 ln -s /home/Aditya/DevOps/Linux/Newfile.txt softlink-file
-ln  /home/Aditya/DevOps/Linux/Newfile.txt hardlink-file
+ln  /home/Aditya/DevOps/Linux/Newfile.txt hardlink-file  
 
 Security :-
 Chmod 744 hardlink-fiile
-Chmod 700 hardlink-fiile
+Chmod 700 hardlink-fiile }
 
 Create a Shell Script :-
 touch script.sh
